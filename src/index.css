@@ -18,12 +18,16 @@ html {
 body {
   display: flex;
   flex-direction: column;
-  background: radial-gradient(circle at top, rgba(241, 210, 70, 0.98), rgba(250, 176, 103, 0.87)),
+  background: radial-gradient(circle at top, rgba(17, 233, 64, 0.98), rgba(0, 0, 0, 0.87)),
     url('bg-pattern-dark.png');
   background-repeat: repeat;
+  background-size: calc(30% + 10px) calc(30% + 10px);
   background-size: 100% 100%, 30% 30%, 100% 100%;
   min-height: 100vh;
+  background-position: center center, calc(50% - 10px) calc(50% - 10px);
 }
+
+
 
 header {
   text-align: center;
@@ -40,7 +44,7 @@ h1 {
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
   margin: 0 auto 3rem auto;
-  color: #3f3b00;
+  color: #041d01;
 }
 
 #game-container {
@@ -48,7 +52,7 @@ h1 {
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 6px;
-  background: linear-gradient(#383624, #282617);
+  background: linear-gradient(#0c1f02, #000000);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -71,20 +75,20 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
+  border-color: #33ff00;
   animation: pulse 2s infinite ease-in-out;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f6e35a;
+  color: #33ff00;
 }
 
 #players button {
   width: 3rem;
   border: none;
   background: none;
-  color: #c3ba78;
+  color: #ffffff;
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -93,7 +97,7 @@ h1 {
 }
 
 #players button:hover {
-  color: #f8ca31;
+  color: #33ff00;
 }
 
 .player {
@@ -204,7 +208,7 @@ ol {
   font-family: 'Caprasimo', cursive;
   font-size: 4rem;
   text-align: center;
-  color: #fcd256;
+  color: #30ff07;
   margin: 0;
 }
 
@@ -219,8 +223,8 @@ ol {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
-  border: 2px solid #fcd256;
-  color: #fcd256;
+  border: 2px solid #30ff07;
+  color: #30ff07;
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
@@ -229,15 +233,15 @@ ol {
 }
 
 #game-over button:hover {
-  background: #fcd256;
+  background: #30ff07;
   color: #3f3b00;
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
+  box-shadow: 0 0 20px rgba(8, 179, 22, 0.8);
 }
 
 #log {
   max-width: 20rem;
-  color: #3f3b00;
+  color: #77d16f;
   list-style: none;
   margin: 2rem auto;
   padding: 0;
